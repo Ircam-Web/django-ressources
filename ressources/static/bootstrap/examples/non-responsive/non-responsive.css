@@ -18,6 +18,10 @@ body {
   margin-bottom: 10px;
 }
 
+.page-header a {
+  text-decoration : none;
+}
+
 
 /* Non-responsive overrides
  *
