@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   {% compress css %}
   <link type="text/less" rel="stylesheet" href="{% static 'less/ressources.less' %}" />
   {% endcompress %}
@@ -18,8 +19,7 @@
     font-variant: small-caps;
   }
   </style>
-  {% block js-bottom %}
-  {% endblock %}
+
 </head>
 <body>
   {% block header %}
@@ -116,6 +116,8 @@
   <script type="text/javacsript" src="{% static 'js/menu-tooltip.js' %}"></script>
   <script type="text/javacsript" src="{% static 'js/language-selector.js' %}"></script>
   <script type="text/javacsript" src="{% static 'js/script.js' %}"></script>
+  {% block js-bottom %}
+  {% endblock %}
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -125,4 +127,5 @@
   pageTracker._trackPageview();
   </script>
 </body>
+
 </html>

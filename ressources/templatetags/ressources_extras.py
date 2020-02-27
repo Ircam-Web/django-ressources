@@ -75,5 +75,5 @@ def thumbnail(parser, token):
     try:
         tag_name, image, width, height = token.split_contents()
     except ValueError:
-        raise template.TemplateSyntaxError, " %r tag requires exactly 3 arguments" % token.contents[0]
+        raise template.TemplateSyntaxError + " %r tag requires exactly 3 arguments" % token.contents[0]
     return ThumbnailerNode(image, int(width), int(height))
