@@ -6532,6 +6532,27 @@ ul.archives li > div h5 {
 .nav-tabs {
   margin-bottom: 15px;
 }
+blockquote p {
+  font-size: 14px;
+  font-style: italic;
+}
+.toc-wrapper {
+  position: sticky;
+  top: 0px;
+}
+.toc-wrapper .toc-title {
+  margin-top: 0.3em;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .toc-wrapper {
+    display: none;
+  }
+  #lang {
+    position: relative;
+    top: auto;
+  }
+}
 @media (min-width: 768px) {
   #header {
     margin-top: 15px;
@@ -6690,13 +6711,11 @@ ul.archives li > div h5 {
     padding-right: 0;
   }
   #main > .row > [class*='col-md-'] > h2 {
-    background: transparent url(../images/title_corner.png) no-repeat top left;
-    height: 106px;
-    line-height: 81px;
+    line-height: 1.3em;
     margin-left: -55px;
-    padding-left: 40px;
+    padding-left: 54px;
+    padding-top: 0.5em;
     margin-top: -15px !important;
-    margin-bottom: -40px;
   }
 }
 .glyphicon-volume-up,

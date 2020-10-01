@@ -11,7 +11,6 @@
   <link type="text/less" rel="stylesheet" href="{% static 'less/ressources.less' %}" />
   {% endcompress %}
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
   {% block head %}
   {% endblock %}
   <style>
@@ -28,7 +27,7 @@
     <div class="row">
       <div class="col-md-8">
         <h1 style="border: 3px solid greenyellow; padding: 25px;"><a href="http://ressources.ircam.fr">Ressources</a><small>.ircam</small></h1>
-        <form class="form-search" method="post" action="http://ressources.ircam.fr/27.html?&np1=0&np2=10&p=1">
+        <!--<form class="form-search" method="post" action="http://ressources.ircam.fr/27.html?&np1=0&np2=10&p=1">
           <div class="input-group">
             <input id="text_input" name="recherche" type="text" class="form-control search-query">
             <input type="hidden" value="simple" name="search_type">
@@ -39,7 +38,7 @@
           <div class="advanced-search">
             <a href="http://ressources.ircam.fr/index.php?id=37">Recherche avancée</a>
           </div>
-        </form>
+        </form>-->
       </div>
       <div class="col-md-4">
         <a id="logo-ircam" href="http://www.ircam.fr/" data-original-title="Vers www.ircam.fr" href="" data-placement="bottom" data-toggle="tooltip">IRCAM Centre Pompidou</a>
@@ -113,9 +112,9 @@
     <a title="Haut de page" class="top" href="#top">Haut de page</a>
   </footer>
   {% endblock %}
-  <script type="text/javacsript" src="{% static 'js/menu-tooltip.js' %}"></script>
-  <script type="text/javacsript" src="{% static 'js/language-selector.js' %}"></script>
-  <script type="text/javacsript" src="{% static 'js/script.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/menu-tooltip.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/language-selector.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
   {% block js-bottom %}
   {% endblock %}
   <script type="text/javascript">
