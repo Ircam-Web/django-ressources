@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-29 10:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ressources/templates/ressources/base.html:59
+msgid "Archives audiovisuelles des conférences et concerts de l'Ircam"
+msgstr ""
+
+#: ressources/templates/ressources/base.html:60
+msgid "Audio"
+msgstr "Audio"
+
+#: ressources/templates/ressources/base.html:60
+msgid "Vidéo"
+msgstr "Vidéo"
+
+#: ressources/templates/ressources/base.html:64
+#: ressources/templates/ressources/base.html:69
+msgid "Base de documentation sur la musique contemporaine"
+msgstr "Base de documentation sur la musique contemporaine"
+
+#: ressources/templates/ressources/base.html:69
+msgid "Œuvres commentées du répertoire de l'Ircam"
+msgstr "Œuvres commentées du répertoire de l'Ircam"
+
+#: ressources/templates/ressources/base.html:70
+msgid "Analyses"
+msgstr "Analyses"
+
+#: ressources/templates/ressources/base.html:74
+msgid "Catalogue de la médiathèque"
+msgstr "Catalogue de la médiathèque"
+
+#: ressources/templates/ressources/base.html:75
+msgid "Catalogue"
+msgstr "Catalogue"
+
+#: ressources/templates/ressources/base.html:79
+msgid "Articles scientifiques et musicologiques de l'Ircam"
+msgstr "Articles scientifiques et musicologiques de l'Ircam"
+
+#: ressources/templates/ressources/base.html:80
+msgid "Articles"
+msgstr "Articles"
+
+#: ressources/templates/ressources/base.html:105
+msgid "Ircam, l'art de l'innovation"
+msgstr "Ircam, l'art de l'innovation"
+
+#: ressources/templates/ressources/base.html:107
+msgid "Equipe"
+msgstr "Equipe"
+
+#: ressources/templates/ressources/base.html:108
+msgid "Contact"
+msgstr "Contact"
+
+#: ressources/templates/ressources/base.html:109
+msgid "A propos"
+msgstr "A propos"
+
+#: ressources/templates/ressources/base.html:110
+msgid "Plan du site"
+msgstr "Plan du site"
+
+#: ressources/templates/ressources/base.html:112
+msgid "Haut de page"
+msgstr "Haut de page"
