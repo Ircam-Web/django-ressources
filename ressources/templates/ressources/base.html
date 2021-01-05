@@ -7,9 +7,9 @@
   <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  {% compress css %}
-  <link type="text/less" rel="stylesheet" href="{% static 'less/ressources.less' %}" />
-  {% endcompress %}
+  <!-- {% compress css %} -->
+  <link rel="stylesheet" href="{% static 'css/ressources.css' %}" />
+  <!-- {% endcompress %} -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   {% block head %}
   {% endblock %}
@@ -56,28 +56,28 @@
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="{% if archiprod %}active{% endif %}">
-            <a data-original-title="Archives audiovisuelles des conférences et concerts de l'Ircam" data-placement="bottom" data-toggle="tooltip" href="{% block archiprod_url %}{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="Archives audiovisuelles des conférences et concerts de l'Ircam">
-              Audio/Vidéo
+            <a data-original-title="{% trans "Archives audiovisuelles des conférences et concerts de l'Ircam" %}" data-placement="bottom" data-toggle="tooltip" href="{% block archiprod_url %}http://medias.ircam.fr{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="{% trans "Archives audiovisuelles des conférences et concerts de l'Ircam"%}">
+              {% trans 'Audio' %}/{% trans 'Vidéo' %}
             </a>
           </li>
           <li class="{% if brahms %}active{% endif %}">
-            <a data-original-title="Base de documentation sur la musique contemporaine" data-placement="bottom" data-toggle="tooltip" href="{% block brahms_url %}{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="Base de documentation sur la musique contemporaine">
+            <a data-original-title="{% trans 'Base de documentation sur la musique contemporaine'%}" data-placement="bottom" data-toggle="tooltip" href="{% block brahms_url %}http://brahms.ircam.fr{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="{% trans 'Base de documentation sur la musique contemporaine'%}">
               B.r.a.h.m.s.
             </a>
           </li>
           <li class="{% if repertoire %}active{% endif %}">
-            <a data-original-title="Base de documentation sur la musique contemporaine" data-placement="bottom" data-toggle="tooltip" href="{% block repertoire_url %}{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="Œuvres commentées du répertoire de l'Ircam">
-              Analyses
+            <a data-original-title="{% trans 'Base de documentation sur la musique contemporaine'%}" data-placement="bottom" data-toggle="tooltip" href="{% block repertoire_url %}http://brahms.ircam.fr/analyses/{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="{% trans "Œuvres commentées du répertoire de l'Ircam"%}">
+              {% trans 'Analyses' %}
             </a>
           </li>
           <li class="{% if catalogue %}active{% endif %}">
-            <a data-original-title="Catalogue de la médiathèque" data-placement="bottom" data-toggle="tooltip" href="{% block catalogue_url %}{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="Catalogue de la médiathèque">
-              Catalogue
+            <a data-original-title="{% trans 'Catalogue de la médiathèque' %}" data-placement="bottom" data-toggle="tooltip" href="{% block catalogue_url %}http://ressources.ircam.fr/catalogue.html{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="{% trans 'Catalogue de la médiathèque'%}">
+              {% trans 'Catalogue'%}
             </a>
           </li>
           <li class="{% if articles %}active{% endif %}">
-            <a data-original-title="Articles scientifiques et musicologiques de l'Ircam" data-placement="bottom" data-toggle="tooltip" href="{% block articles_url %}{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="Articles scientifiques et musicologiques de l'Ircam">
-              Articles
+            <a data-original-title="{% trans "Articles scientifiques et musicologiques de l'Ircam"%}" data-placement="bottom" data-toggle="tooltip" href="{% block articles_url %}http://articles2.ircam.fr/{% endblock %}" data-placement="bottom" data-toggle="tooltip" title="{% trans "Articles scientifiques et musicologiques de l'Ircam"%}">
+              {% trans 'Articles'%}
             </a>
           </li>
         </ul>
@@ -93,24 +93,24 @@
             <input type="radio" name="language" id="{{ language.code }}" value="{{ language.code }}" {% if LANGUAGE_CODE == language.code %} checked {% endif %}> <label for="{{ language.code }}">{{ language.code }}</label>
             {% endfor %}
           </form>
-      <a><label for="fr" style="font-weight:normal">fr</label></a>
-      <a><label for="en" style="font-weight:normal">en</label></a>
+      <a><label {% if LANGUAGE_CODE == 'fr' %}class='languageSelected'{% endif %} for="fr" style="font-weight:normal">fr</label></a>
+      <a><label {% if LANGUAGE_CODE == 'en' %}class='languageSelected'{% endif %} for="en" style="font-weight:normal">en</label></a>
   </div>
   </header>
   {% endblock %}
   {% block content %}
   {% endblock %}
   {% block footer %}
-  <footer id="footer" class="container">
-    <h2>Ircam, l'art de l'innovation</h2>
+  <!-- <footer id="footer" class="container">
+    <h2>{% trans "Ircam, l'art de l'innovation" %}</h2>
     <div>
-      <a href="">Equipe</a>
-      <a href="">Contact</a>
-      <a href="">A propos</a>
-      <a href="">Plan du site</a>
+      <a href="">{% trans 'Equipe'%}</a>
+      <a href="">{% trans 'Contact'%}</a>
+      <a href="">{% trans 'A propos'%}</a>
+      <a href="">{% trans 'Plan du site'%}</a>
     </div>
-    <a title="Haut de page" class="top" href="#top">Haut de page</a>
-  </footer>
+    <a title="{% trans 'Haut de page'%}" class="top" href="#top">{% trans 'Haut de page'%}</a>
+  </footer> -->
   {% endblock %}
   <script type="text/javascript" src="{% static 'js/menu-tooltip.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/language-selector.js' %}"></script>
